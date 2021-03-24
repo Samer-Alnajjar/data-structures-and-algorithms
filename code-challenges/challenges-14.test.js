@@ -12,13 +12,12 @@ Write a function named screenForNames that takes in an array of strings and uses
 
 const screenForNames = (arr) => {
   // Solution code here...
-  let output = [];
-  const regex = /^(Mr\.|Mrs\.|Ms\.|Dr\.)\s?\w*/g;
+  let newArr = [];
+  const regex = /^(Mr\.|Mrs\.|Ms\.|Dr\.)\s?\S\w*/g;
   arr.forEach((str) => {
-    regex.test(str) ? output.push(str) : null;
+    regex.test(str) ? newArr.push(str) : null;
   });
-  output.pop();
-  return output;
+  return newArr;
 };
 
 
