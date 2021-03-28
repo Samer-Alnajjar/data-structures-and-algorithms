@@ -3,3 +3,5 @@
 ## White board
 
 ![reverse-array](../../../assets/array-reverse.png)
+
+[reverse-array Code](./app.js)
