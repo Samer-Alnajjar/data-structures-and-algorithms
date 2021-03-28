@@ -5,3 +5,5 @@ const reverseArray = (arr) => {
   }
   return newArr;
 }
+
+module.exports = reverseArray;
