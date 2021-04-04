@@ -58,13 +58,64 @@ class LinkedList  {
     }
   }
 
+  append(value) {
+    var newNode = new Node(value);
+    if(!this.head){
+        this.head = newNode;
+    } else {
+        let lastNode = this.head;
+        while(lastNode.next) {
+            lastNode = lastNode.next;
+        }
+        lastNode.next = newNode;
+    }
+  }
+
+  insertAfter(value, newVal) {
+    let node = new Node(newVal);
+    let current = this.head;
+    while(current) {
+      if(current.value === value) {
+        let temp = current.next;
+        current.next = node;
+        node.next = temp;
+        return;
+      }
+      current = current.next;
+    }
+    return "Exception";
+  }
+
+  insertBefore(value, newVal) {
+    let node = new Node(newVal);
+    let current = this.head;
+    while(current && current.next !== null) {
+      if(current.next.value === value) {
+        let temp = current.next;
+        current.next = node;
+        node.next = temp;
+        return;
+      }
+      current = current.next;
+    }
+    return "Exception";
+  }
+
 }
 
 const ll = new LinkedList();
 
 ll.insert(100);
 ll.insert(200);
-ll.includes(300);
+ll.insert(300);
+// ll.insert(400);
+// ll.includes(300);
+// ll.insertAfter(200, 25);
+ll.append(10);
+ll.append(20);
+ll.append(30);
+ll.append(40);
+ll.insertBefore(300, 25);
 ll.toString();
 
 
