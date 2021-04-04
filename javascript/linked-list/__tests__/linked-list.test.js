@@ -117,6 +117,92 @@ test("Should return all the values inside the linked list", () => {
   expect(array[8]).toEqual("NULL");
 })
 
+test("Should add node to the end of the linked list", () => {
+  let ll = new LinkedList();
+
+  ll.insert(100);
+  ll.insert(200);
+  ll.insert(300);
+  ll.append(10);
+
+  expect(ll.toString()).toEqual("{300} -> {200} -> {100} -> {10} -> NULL");
+})
+
+test("Should add nodes to the end of the linked list", () => {
+  let ll = new LinkedList();
+
+  ll.insert(100);
+  ll.insert(200);
+  ll.insert(300);
+  ll.append(10);
+  ll.append(20);
+  ll.append(30);
+  ll.append(40);
+
+  expect(ll.toString()).toEqual("{300} -> {200} -> {100} -> {10} -> {20} -> {30} -> {40} -> NULL");
+})
+
+
+test("Should insert a node before a node located i the middle of a linked list", () => {
+  let ll = new LinkedList();
+
+  ll.insert(100);
+  ll.insert(200);
+  ll.insert(300);
+  ll.insertBefore(200, 1000);
+
+  let finalLinkedList = ll.toString();
+  let array = finalLinkedList.split(" ");
+
+  expect(array[2]).toEqual("{1000}");
+
+})
+
+test("Should insert a node before the first node of a linked list", () => {
+  let ll = new LinkedList();
+
+  ll.append(100);
+  ll.append(200);
+  ll.insert(300);
+ 
+
+  let finalLinkedList = ll.toString();
+  let array = finalLinkedList.split(" ");
+
+  expect(array[0]).toEqual("{300}");
+
+})
+
+test("Should insert a node after a node located i the middle of a linked list", () => {
+  let ll = new LinkedList();
+
+  ll.insert(100);
+  ll.insert(200);
+  ll.insert(300);
+  ll.insertAfter(200, 1000);
+
+  let finalLinkedList = ll.toString();
+  let array = finalLinkedList.split(" ");
+
+  expect(array[4]).toEqual("{1000}");
+
+})
+
+test("Should insert a node after the last node of the linked list", () => {
+  let ll = new LinkedList();
+
+  ll.insert(100);
+  ll.insert(200);
+  ll.insert(300);
+  ll.append(1000);
+
+  expect(ll.toString()).toEqual("{300} -> {200} -> {100} -> {1000} -> NULL");
+
+})
+
+
+
+
 // test('should insert new header to linked list', () => {
 //   //arrange
 //   let ll = new LinkedList();// empty
