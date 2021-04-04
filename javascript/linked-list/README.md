@@ -27,10 +27,14 @@ The big O:
 ## API
 <!-- Description of each method publicly available to your Linked List -->
 
-Insert() => function add nodes into the linked list.
-includes(value) => function check if the passed value is in the linked list.
-toString() => function will print all the values inside the linked list.
-append(value) => function will add a node to the end of the linked list.
-insertAfter(value, newVal) => function will search for the value and add a new node with the newVal after the matched value.
-insertBefore(value, newVal) => function will search for the value and add a new node with the newVal before the matched value.
- 
+- Insert() => function add nodes into the linked list.
+- includes(value) => function check if the passed value is in the linked list.
+- toString() => function will print all the values inside the linked list.
+- append(value) => function will add a node to the end of the linked list.
+- insertAfter(value, newVal) => function will search for the value and add a new node with the newVal after the matched value.
+- insertBefore(value, newVal) => function will search for the value and add a new node with the newVal before the matched value.
+
+Worked with:
+- Omar
+- Ruba
+- Bayan
