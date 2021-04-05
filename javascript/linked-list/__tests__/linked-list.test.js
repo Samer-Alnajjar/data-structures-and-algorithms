@@ -197,9 +197,57 @@ test("Should insert a node after the last node of the linked list", () => {
   ll.append(1000);
 
   expect(ll.toString()).toEqual("{300} -> {200} -> {100} -> {1000} -> NULL");
-
 })
 
+test("should return an exception when k is greater than the length of the linked list", () => {
+  let ll = new LinkedList();
+
+  ll.insert(100);
+  ll.insert(200);
+  ll.insert(300);
+  ll.append(1000);
+
+  expect(ll.kthFromEnd(5)).toEqual("Exception");
+})
+
+test("should return an the last value when k equal the length of the linked list", () => {
+  let ll = new LinkedList();
+
+  ll.insert(100);
+  ll.insert(200);
+  ll.append(10);
+
+  expect(ll.kthFromEnd(2)).toEqual(200);
+})
+
+test("should return an exception when k is not a positive integer  ", () => {
+  let ll = new LinkedList();
+
+  ll.insert(100);
+  ll.insert(200);
+  ll.append(10);
+
+  expect(ll.kthFromEnd(-1)).toEqual("Exception");
+})
+
+test("should return the head when the linked list is of a size 1  ", () => {
+  let ll = new LinkedList();
+
+  ll.insert(100);
+
+
+  expect(ll.kthFromEnd(0)).toEqual(100);
+})
+
+test("should return “Happy Path” when k is not at the end, but somewhere in the middle of the linked list ", () => {
+  let ll = new LinkedList();
+  
+  ll.insert(100);
+  ll.insert(200);
+  ll.append(10);
+
+  expect(ll.kthFromEnd(1)).toEqual(100);
+})
 
 
 
