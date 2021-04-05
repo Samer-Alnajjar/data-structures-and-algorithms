@@ -60,6 +60,7 @@ class LinkedList  {
 
   append(value) {
     var newNode = new Node(value);
+    this.length++;
     if(!this.head){
         this.head = newNode;
     } else {
@@ -76,6 +77,7 @@ class LinkedList  {
     let current = this.head;
     while(current) {
       if(current.value === value) {
+        this.length++;
         let temp = current.next;
         current.next = node;
         node.next = temp;
@@ -91,6 +93,7 @@ class LinkedList  {
     let current = this.head;
     while(current && current.next !== null) {
       if(current.next.value === value) {
+        this.length++;
         let temp = current.next;
         current.next = node;
         node.next = temp;
@@ -98,6 +101,22 @@ class LinkedList  {
       }
       current = current.next;
     }
+    return "Exception";
+  }
+
+  kthFromEnd(k) {
+    let current = this.head;
+    let position = this.length - 1 - k;
+    let index = 0;
+    while(current) {
+      if(position === index) {
+        console.log(current.value);
+        return current.value;
+      }
+      current = current.next
+      index++;
+    }
+    console.log(`Exception`);
     return "Exception";
   }
 
@@ -116,7 +135,9 @@ ll.append(20);
 ll.append(30);
 ll.append(40);
 ll.insertBefore(300, 25);
+ll.kthFromEnd(0)
 ll.toString();
+
 
 
 module.exports = {
