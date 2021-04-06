@@ -124,19 +124,19 @@ class LinkedList  {
 
 const ll = new LinkedList();
 
-ll.insert(100);
-ll.insert(200);
-ll.insert(300);
+// ll.insert(100);
+// ll.insert(200);
+// ll.insert(300);
 // ll.insert(400);
 // ll.includes(300);
 // ll.insertAfter(200, 25);
-ll.append(10);
-ll.append(20);
-ll.append(30);
-ll.append(40);
-ll.insertBefore(300, 25);
-ll.kthFromEnd(0)
-ll.toString();
+// ll.append(10);
+// ll.append(20);
+// ll.append(30);
+// ll.append(40);
+// ll.insertBefore(300, 25);
+// ll.kthFromEnd(12)
+// ll.toString();
 
 
 
