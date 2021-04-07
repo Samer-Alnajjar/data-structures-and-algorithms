@@ -1,4 +1,4 @@
-**Code_Challenge 05 // Linked-List**
+**Code_Challenge 07 // Linked-List**
 
 
 [linked-list Code](./ll-zip.js)
@@ -6,7 +6,7 @@
 
 ----------------------
 
-# Singly Linked List
+# Linked List Zip
 <!-- Short summary or background information -->
 Linked list is a type of data structure that is better than arrays.
 
