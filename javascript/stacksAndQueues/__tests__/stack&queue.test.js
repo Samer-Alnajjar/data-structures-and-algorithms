@@ -1,8 +1,8 @@
 "use strict"
 
-const {Node, Stack, Queue} = require("../stacks-and-queues.js");
-
-console.log(Node, Stack, Queue);
+const Node = require("../stacks-and-queues.js").Node;
+const Stack = require("../stacks-and-queues.js").Stack;
+const Queue = require("../stacks-and-queues.js").Queue;
 
 test('Should be able to Push onto a stack',() =>{
   let stack = new Stack();

@@ -5,9 +5,6 @@ const LinkedList = require("../ll-zip.js").LinkedList;
 const Node = require("../ll-zip.js").Node;
 
 
-
-
-
 test("'Happy path', Should return all the values into a new linked list", () => {
   const ll1 = new LinkedList();
   const ll2 = new LinkedList();
