@@ -32,33 +32,43 @@ class PseudoQueue {
   }
 
   dequeue() {
-    if(this.pushStack.array.length === 0) {
+    if(this.pushStack.array.length === 0 && this.popStack.array.length === 0) {
       return "Exception";
     }
-    while(this.pushStack.array.length > 1) {
-      const temp = this.pushStack.array.pop();
-      this.popStack.array.push(temp);
-    }
-    if(this.pushStack.array.length === 0) {
-      this.popStack.array.pop();
+    if(this.pushStack.array.length >= 1 && this.popStack.array.length === 0) {
+      while(this.pushStack.array.length > 1) {
+        const temp = this.pushStack.array.pop();
+        this.popStack.array.push(temp);
+        if(this.pushStack.array.length === 1) {
+          return this.pushStack.array.pop();
+        }
+      }
+    } else if(this.pushStack.array.length !== 0) {
+      return this.popStack.array.pop();
     } else {
-      this.pushStack.array.pop();
-    }
+      return this.popStack.array.pop();
+    } 
   }
 }
 
-const queue = new PseudoQueue();
+// const queue = new PseudoQueue();
 
-queue.enqueue(1);
-queue.enqueue(2);
-queue.enqueue(3);
-queue.enqueue(4);
-queue.enqueue(5);
-queue.dequeue();
-queue.dequeue();
-queue.enqueue(6);
-queue.dequeue();
-console.log(queue);
+// queue.enqueue(1);
+// queue.enqueue(2);
+// queue.enqueue(3);
+// queue.enqueue(4);
+// queue.enqueue(5);
+// queue.dequeue();
+// queue.enqueue(6);
+// queue.dequeue();
+// queue.dequeue();
+// queue.enqueue(7);
+// queue.dequeue();
+// queue.dequeue();
+// queue.dequeue();
+// queue.dequeue();
+
+// console.log(queue);
 
 
 module.exports = {

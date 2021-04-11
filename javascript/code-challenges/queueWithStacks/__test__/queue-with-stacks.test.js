@@ -8,6 +8,7 @@ test("“Happy Path” - Expected outcome", () => {
   queue.enqueue(1);
   queue.enqueue(2);
   queue.enqueue(3);
+
   queue.dequeue();
 
   expect(queue.pushStack.array.length).toEqual(0);
