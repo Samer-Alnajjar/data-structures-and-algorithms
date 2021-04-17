@@ -35,4 +35,5 @@ function multiBracketValidation(string) {
     return false
 }
 
+
 module.exports = multiBracketValidation;
