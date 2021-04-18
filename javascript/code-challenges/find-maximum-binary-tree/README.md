@@ -1,21 +1,20 @@
 # Challenge Summary
 <!-- Short summary or background information -->
-Function to check the if the string has a opening and closing brackets
+Function to get the max from binary tree
 
 
 ## Challenge Description
 <!-- Description of the challenge -->
-Function to check the if the string has a opening and closing brackets
+Function to get the max from binary tree
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
-Loop inside the string and check the brackets.
+Loop inside the array and get the max number.
 
 - Big o:
 time: O(n)
-space: O(1)
+space: O(n)
 
 ## Solution
 <!-- Embedded whiteboard image -->
-
-![linked-list WhiteBoard](../../../assets/multi-bracket-validation.png);
+![find max WhiteBoard](../../../assets/find-max-binary.png)
