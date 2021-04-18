@@ -65,7 +65,6 @@ class BinaryTree {
   }
 }
 
-
 class BinarySearchTree {
   constructor(root = null) {
     this.root = root;
@@ -121,6 +120,7 @@ class BinarySearchTree {
   }
 
 }
+
 
 module.exports = {
   BinaryTree,

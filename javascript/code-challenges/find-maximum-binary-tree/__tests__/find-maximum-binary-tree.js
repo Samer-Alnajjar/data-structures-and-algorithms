@@ -1,8 +1,8 @@
 'use strict';
 
-const { Node } = require('../tree.js');
-const { BinaryTree } = require('../tree.js');
-const { BinarySearchTree } = require('../tree.js');
+const { Node } = require('../find-maximum-binary-tree.js');
+const { BinaryTree } = require('../find-maximum-binary-tree.js');
+const { BinarySearchTree } = require('../find-maximum-binary-tree.js');
 
 
 describe('Node Module', () => {
@@ -83,6 +83,9 @@ describe('Binary Tree', () => {
   });
 
 });
+
+
+
 
 describe('Binary Search Tree', () => {
   
