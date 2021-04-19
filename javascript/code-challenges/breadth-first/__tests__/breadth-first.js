@@ -99,9 +99,9 @@ describe('Binary Tree', () => {
   })
 
   it("breadth-first, Edge case", () => {
-    const array = emptyTree.bfs();
+    const array = nodeTree.bfs();
     // console.log(array);
-    expect(array).toEqual("Exception");
+    expect(array).toEqual([1]);
   })
 });
 
