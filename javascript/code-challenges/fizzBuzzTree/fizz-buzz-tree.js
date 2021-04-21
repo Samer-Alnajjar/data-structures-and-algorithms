@@ -15,7 +15,7 @@ class BinaryTree {
 
 function fizzBuzzTree(node) {
   let i = 0;
-  if (node.root === null) {
+  if (!node) {
     return "Exception";
   }
 

@@ -4,9 +4,11 @@ const { Node, BinaryTree, fizzBuzzTree } = require("../fizz-buzz-tree");
 
 describe('Binary Tree', () => {
   let tree;
+  let emptyTree;
 
   beforeAll(() => {
     tree = new BinaryTree(new Node(1));
+    emptyTree = new BinaryTree(new Node());
 
     tree.root.children.push(new Node(3));
     tree.root.children[0].parent = tree;
@@ -27,24 +29,18 @@ describe('Binary Tree', () => {
 
 
   test("“Happy Path” - Expected outcome", () => {
-    // Will get back to it later
-    // const test = fizzBuzzTree(tree.root).root;
-    // console.log(test);
-    expect("test").toEqual("test");
+    const test = fizzBuzzTree(tree.root);
+    expect(test).toEqual(tree.root);
   })
 
   test("Expected failure", () => {
-    // Will get back to it later
-    // const test = fizzBuzzTree(tree.root).root;
-    // console.log(test);
-    expect("failure").toEqual("failure");
+    const test = fizzBuzzTree();
+    expect(test).toEqual("Exception");
   })
 
   test("Edge case", () => {
-    // Will get back to it later
-    // const test = fizzBuzzTree(tree.root).root;
-    // console.log(test);
-    expect("Edge case").toEqual("Edge case");
+    const test = fizzBuzzTree(emptyTree.root);
+    expect(test.value).toBeUndefined();
   })
 
 })
