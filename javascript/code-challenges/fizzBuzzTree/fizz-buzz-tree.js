@@ -20,7 +20,6 @@ function fizzBuzzTree(node) {
   }
 
   let _traverse = (node) => {
-    console.log("Node", node);
     if(node) {
       if (node.value % 3 === 0 && node.value % 5 === 0) {
         node.value = 'FizzBuzz';
@@ -35,7 +34,6 @@ function fizzBuzzTree(node) {
   };
 
   if (node.children.length && node.value) {
-    console.log("length", node.children.length);
     while (i < node.children.length) {
       _traverse(node.children[i]);
       i++;
