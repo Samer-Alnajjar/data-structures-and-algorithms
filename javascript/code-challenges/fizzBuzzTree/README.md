@@ -1,14 +1,15 @@
 # Challenge Summary
 <!-- Short summary or background information -->
-Function to check if a number is devisable 3, 5, 15
+Function to give what inside the tree using breadth first
+
 
 ## Challenge Description
 <!-- Description of the challenge -->
-Function to check if a number is devisable 3, 5, 15
+Function to give what inside the tree using breadth first
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
-Loop inside the tree and and check if the value is devisable 3, 5, 15
+Loop inside th tree and push the elements inside an array.
 
 - Big o:
 time: O(n)
@@ -16,4 +17,4 @@ space: O(n)
 
 ## Solution
 <!-- Embedded whiteboard image -->
-![fizzbuzz WhiteBoard](../../../assets/fizzbuzz-test.png)
+![breadth-first WhiteBoard](../../../assets/breadth-first.png)
