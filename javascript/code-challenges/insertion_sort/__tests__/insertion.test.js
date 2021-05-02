@@ -7,6 +7,7 @@ test("“Happy Path” - Expected outcome", () => {
   expect(insertionSort(arr)).toEqual([20, 25, 62, 79]);
 })
 
+
 test("Expected failure", () => {
   let arr = [];
 
@@ -18,4 +19,3 @@ test("Edge case", () => {
 
   expect(insertionSort(arr)).toEqual([1, 1, 1, 1]);
 })
-
