@@ -20,3 +20,4 @@ test("Edge case", () => {
 
   expect(insertionSort(arr)).toEqual([1, 1, 1, 1]);
 })
+
