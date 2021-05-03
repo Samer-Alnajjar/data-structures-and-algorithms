@@ -14,6 +14,7 @@ test("Expected failure", () => {
   expect(insertionSort(arr)).toEqual("Exception");
 })
 
+
 test("Edge case", () => {
   let arr = [1, 1, 1, 1];
 
