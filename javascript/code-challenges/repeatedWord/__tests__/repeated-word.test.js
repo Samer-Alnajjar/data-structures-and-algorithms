@@ -7,7 +7,7 @@ test('return the text is unprovided if it was empty string',()=>{
 
     let expected= isRepeated(str);
 
-    expect(expected).toEqual('The string provided is empty');
+    expect(expected).toEqual('No repeated words');
 });
 
 test('Happy results (Expected results)',()=>{
