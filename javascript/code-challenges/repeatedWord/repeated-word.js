@@ -21,7 +21,7 @@ function isRepeated(string) {
       }
     }
   } else {
-    return "The string provided is empty";
+    return "No repeated words";
   }
 }
 
