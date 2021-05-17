@@ -4,20 +4,20 @@ function isRepeated(string) {
   if(string === " ") return "Exception";
 
   if (string.length) {
-    let word = string.match(/\w+/g);
+    let words = string.match(/\w+/g);
     // let word= string.match(/\b[A-z]\b+/g);
     let count = {};
 
     for (let i = 0; i < word.length; i++) {
-      let letter = word[i].toLowerCase();
+      let word = word[i].toLowerCase();
 
-      if (!count[letter]) {
-        count[letter] = 1;
-      } else if (count[letter]) {
-        count[letter]++;
+      if (!count[word]) {
+        count[word] = 1;
+      } else if (count[word]) {
+        count[word]++;
       }
-      if (count[letter] > 1) {
-        return letter;
+      if (count[word] > 1) {
+        return word;
       }
     }
   } else {
