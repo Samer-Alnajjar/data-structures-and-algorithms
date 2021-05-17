@@ -8,8 +8,8 @@ function isRepeated(string) {
     // let word= string.match(/\b[A-z]\b+/g);
     let count = {};
 
-    for (let i = 0; i < word.length; i++) {
-      let word = word[i].toLowerCase();
+    for (let i = 0; i < words.length; i++) {
+      let word = words[i].toLowerCase();
 
       if (!count[word]) {
         count[word] = 1;
