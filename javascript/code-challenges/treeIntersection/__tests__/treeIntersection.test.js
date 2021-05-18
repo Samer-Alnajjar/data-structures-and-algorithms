@@ -1,7 +1,6 @@
 'use strict';
 
 const { Node, BinaryTree } = require('../../../tree/tree');
-console.log(Node, BinaryTree);
 const treeIntersection = require('../treeIntersection');
 
 //===================================
@@ -63,7 +62,6 @@ const three3 = new Node(3);
 one3.left = two3;
 one3.right = three3;
 let tree3 = new BinaryTree(one3)
-console.log(tree3);
 
 const one4 = new Node(4);
 const two4 = new Node(5);
@@ -71,7 +69,6 @@ const three4 = new Node(6);
 one4.left = two4;
 one4.right = three4;
 let tree4 = new BinaryTree(one4)
-console.log(tree4);
 
 
 //======================================
@@ -83,7 +80,6 @@ test('if it can return a set of values intersected in both trees', () => {
 
 test('No common values between the trees', () => {
     let results = treeIntersection(tree3, tree4);
-    console.log(results);
 
     expect(results).toEqual("There is no common values inside the two trees");
 })
