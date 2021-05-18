@@ -9,8 +9,11 @@ function treeIntersection(tree1, tree2) {
   const arrFromTree2 = tree2.preOrder();
   const newArr  = [];
   for (let i = 0; i < arrFromTree1.length; i++) {
-    if(arrFromTree2.includes(arrFromTree1[i])) {
-      newArr.push(arrFromTree1[i]);
+    for(let j = 0; j < arrFromTree2.length; j++) {
+      if(arrFromTree1[i] === arrFromTree2[j]) {
+        newArr[i] = arrFromTree2[j];
+        break;
+      }
     }
   }
 
