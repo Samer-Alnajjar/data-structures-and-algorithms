@@ -5,18 +5,19 @@
 
 ----------------------
 
-# Hashtables
+# Graph
 <!-- Short summary or background information -->
-Hash table is a type of data structure to find element very fast. 
+Graph is a type of DataStructure. 
 
 
 ## Challenge
 <!-- Description of the challenge -->
 We want to use four methods for hash table:
-- add:takes in both the key and value. This method should hash the key, and add the key and value pair to the table, handling collisions as needed.
-- get: takes in the key and returns the value from the table.
-- contains: takes in the key and returns a boolean, indicating if the key exists in the table already.
-- hash: takes in an arbitrary key and returns an index in the collection.
+addVertex(): to add a node
+addDirectedEdge(): to add an edge 
+getVerteces(): to get node 
+getNeighbors(): get the node neighbors
+size(): number nodes
 
 ## Approach & Efficiency
 <!-- What approach did you take? Why? What is the Big O space/time for this approach? -->
@@ -30,7 +31,8 @@ The big O:
 ## API
 <!-- Description of each method publicly available to your Linked List -->
 
-- **add**:takes in both the key and value. This method should hash the key, and add the key and value pair to the table, handling collisions as needed.
-- **get**: takes in the key and returns the value from the table.
-- **contains**: takes in the key and returns a boolean, indicating if the key exists in the table already.
-- **hash**: takes in an arbitrary key and returns an index in the collection.
+**addVertex**: to add a node
+**addDirectedEdge**: to add an edge 
+**getVerteces**: to get node 
+**getNeighbors**: get the node neighbors
+**size**: number nodes
